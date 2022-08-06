@@ -13,5 +13,6 @@ class Task(Base):
 class Done(Base):
     __tablename__ = "dones"
     id = Column(Integer, ForeignKey("tasks.id"), primary_key = True)
+    # Todoが完了したかどうかはFlagでもつのではなくdonesテーブルに入っているかで管理する
     task = relationship("Task", back_populates="done")
     

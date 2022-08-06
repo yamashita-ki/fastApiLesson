@@ -1,5 +1,3 @@
-from asynchat import async_chat
-from curses import echo
 import os
 from dotenv import load_dotenv
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
